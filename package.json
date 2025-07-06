@@ -1,0 +1,26 @@
+{
+  "name": "express-rest-api",
+  "version": "1.0.0",
+  "description": "A simple REST API built with Express.js for the mini project assessment.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [
+    "express",
+    "rest",
+    "api",
+    "nodejs",
+    "mini-project"
+  ],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
