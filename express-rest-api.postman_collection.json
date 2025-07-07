@@ -1,0 +1,134 @@
+{
+  "info": {
+    "name": "Express REST API",
+    "_postman_id": "e7fc9f92-12b4-4bd5-8b0c-53e8c3a9d4f4",
+    "description": "Postman collection for testing the Express.js CRUD API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Root - Hello World",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            ""
+          ]
+        }
+      }
+    },
+    {
+      "name": "Get All Items",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/items",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "items"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Get Item by ID",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/items/1",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "items",
+            "1"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Create Item",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"Wireless Mouse\",\n  \"description\": \"An ergonomic wireless mouse.\"\n}"
+        },
+        "url": {
+          "raw": "{{base_url}}/items",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "items"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Update Item",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"Gaming Laptop\",\n  \"description\": \"An even more powerful computing device.\"\n}"
+        },
+        "url": {
+          "raw": "{{base_url}}/items/1",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "items",
+            "1"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Delete Item",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/items/1",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "items",
+            "1"
+          ]
+        }
+      }
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "key": "base_url",
+      "value": "http://localhost:3000"
+    }
+  ]
+}
